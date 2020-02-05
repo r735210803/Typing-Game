@@ -1,0 +1,21 @@
+Import java.applet.Applet;
+Import Java.awt.Graphics;
+public class DemonstrationApplet extends Applet()
+{
+int x,y,width,height;
+   public void init()
+{
+x=Integer.parseInt(getParameter("xvalue"));
+y=Integer.parseInt(getParameter("yvalue"));
+width=Integer.parseInt(getParameter("widthvalue"));
+height=Integer.parseInt(getParameter("heightvalue"));
+
+set.Background(Color.RED);
+}
+public void paint(Graphics g)
+{ 
+g.drawRect(x,y,width,height);
+g.drawString("Rectangular shape drawn using applet and html code",10,10);
+}
+}
+/* Now there html file be in my Data base in GitHub */
